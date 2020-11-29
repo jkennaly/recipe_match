@@ -1,0 +1,14 @@
+refactoring: 
+	find out how ingredient amounts are currently being converted (line 322-340ish)
+	use the for loop to put ingredient stuff directly in ingred_dict (line 295)
+	add library for measurement conversion
+
+features:
+	allow user to convert how many servings they want
+	forms to "upload" recipes
+	database to store recipes
+	html interface and persistent selection memory
+	list of recipes when grocery list is displayed
+
+bugs: 
+	when it says recipe object, make sure to return recipe.name instead of recipe
