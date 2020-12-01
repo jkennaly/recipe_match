@@ -1,5 +1,6 @@
 import os
 import tkinter
+import pint
 
 class Recipe(object):
 
@@ -183,8 +184,8 @@ class Menu(object):
         self.folder_path = folder_path
 
         recipe_list = os.listdir(folder_path)
-        for recipe in recipe_list:
-            recipe = Recipe(recipe)
+        for each in recipe_list:
+            recipe = Recipe(each)
             self.meal_list.append(recipe)
             self.recipe_list[recipe.name] = recipe
         return self
@@ -331,9 +332,7 @@ class Make_Shopping_List(object):
                     sums_dict[this_unit] += this_amt
                 else:
                     sums_dict[this_unit] = this_amt
-                
-
-            
+                         
             amounts = ""
             for each in sums_dict:
                 amounts += str(sums_dict[each])
@@ -491,9 +490,9 @@ class Inventory(tkinter.Frame):
         self.on_hand_checked_dict = {}
 
 
-        button0 = tkinter.Button(self, text = "Reset.", command = lambda: Inventory.wipe(self, container, root, user))
+        button0 = tkinter.Button(self, text = "Reset", command = lambda: Inventory.wipe(self, container, root, user))
         button0.grid(row = 1, column = 1)
-        button0a = tkinter.Button(self, text = "Set.", command = lambda: Inventory.done_inner(self, container, root, user))
+        button0a = tkinter.Button(self, text = "Set", command = lambda: Inventory.done_inner(self, container, root, user))
         button0a.grid(row = 3, column = 1)
 
 

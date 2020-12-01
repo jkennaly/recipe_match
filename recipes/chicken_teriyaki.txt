@@ -1,7 +1,7 @@
 Chicken Teriyaki
 chicken	teriyaki sauce	rice
 2	1	4
-lb	cup	cup
+cup	cup	cup
 9
 5 minutes
 15 minutes
