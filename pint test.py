@@ -2,7 +2,7 @@ from pint import UnitRegistry
 unitregistry = UnitRegistry()
 
 def convert(msrmt, unit, new_unit):
-    return (msrmt * unitregistry.unit).to(unitregistry.new_unit)
+    return (msrmt * getattr(unitregistry, unit)).to(getattr(unitregistry, new_unit))
 
 print("msrmt: 6")
 print("unit: cup")
