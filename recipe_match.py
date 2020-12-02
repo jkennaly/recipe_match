@@ -1,6 +1,6 @@
 import os
 import tkinter
-import pint
+from pint import UnitRegistry
 
 class Recipe(object):
 
@@ -1298,8 +1298,6 @@ class Browse(tkinter.Frame):
 
 
 
-
-
 def main():
 
     global STAPLES
@@ -1325,12 +1323,12 @@ def main():
     container.grid_rowconfigure(0, weight = 1)
     container.grid_columnconfigure(0, weight = 1)
     main_menu = Main_menu(container, root, user)
-    tkinter.mainloop() 
+    tkinter.mainloop()
 
 
 main()
 
- 
+
 
 
 

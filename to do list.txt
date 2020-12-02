@@ -2,6 +2,7 @@ refactoring:
 	find out how ingredient amounts are currently being converted (line 322-340ish)
 	use the for loop to put ingredient stuff directly in ingred_dict (line 295)
 	add library for measurement conversion
+	do i need an __init__.py?
 
 features:
 	allow user to convert how many servings they want
@@ -11,6 +12,7 @@ features:
 	list of recipes when grocery list is displayed
 	allow user to save a menu, shopping list, etc
 	browse cookbook by category, not just alphabetical
+	convert recipe to international measures
 
 bugs: 
 	when it says recipe object, make sure to return recipe.name instead of recipe (view menu, recipe match)
@@ -26,4 +28,7 @@ bugs:
 
 create a new branch to work on something
 
-(git checkout -b [branch name])
+git checkout -b [branch name]
+git add .
+git commit -m "message"
+git push origin
